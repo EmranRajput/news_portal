@@ -4,14 +4,30 @@
   border-color: white !important; /* if buttons have borders */
 }
 
-.header li.has-children a:hover {
-  color: black !important; /* optional for hover effect */
-  background-color: white !important;
+.header .main-menu > li > a:hover {
+  background-color: rgb(163, 166, 179) !important;
+  color: #05264E !important; /* Or any color you want on hover */
+  border-radius: 4px; /* Optional: makes the hover effect smooth */
+  transition: 0.3s;
+  padding: 5px 10px !important; /* Adjust values as needed */
 }
+
 .dropdwnabc li a{
       color: black !important; /* optional for hover effect */
 
 }
+.header .main-menu > li {
+    padding: 5px 10px !important; /* Adjust values as needed */
+    margin: 0 !important;
+}
+/* Reduce padding for mobile menu items */
+.mobile-menu > li {
+    padding: 5px 10px !important;
+}
+.sticky-bar{
+    padding: 0px !important;
+}
+
 
  </style>
 
@@ -19,18 +35,28 @@
     <div class="container">
       <div class="main-header">
         <div class="header-left">
-          <div class="header-logo"><a class="d-flex" href="index.html"><img alt="joblist"
-                src="assets/imgs/template/logo.png"></a></div>
+          <div class="header-logo">
+            <a class="d-flex" href="index.html">
+                <img alt="logo" src="assets/imgs/template/logo.png">
+            </a>
+          </div>
         </div>
+
         <div class="header-nav">
           <nav class="nav-main-menu">
             <ul class="main-menu">
               <li class="has-children"><a class="active" href="index.html">Home</a></li>
-              <li class="has-children"><a href="jobs-list.html">Find a Job</a></li>
-              <li class="has-children"><a href="companies-grid.html">Recruiters</a></li>
-              <li class="has-children"><a href="candidates-grid.html">Candidates</a></li>
-              <li class="has-children"><a href="blog-grid.html">Pages</a>
-                <ul class="sub-menu">
+              <li class="has-children"><a href="jobs-list.html">International</a></li>
+              <li class="has-children"><a href="companies-grid.html">Local</a></li>
+              <li class="has-children"><a href="candidates-grid.html">Sport</a></li>
+              <li class="has-children"><a href="blog-grid.html">Business</a>
+              <li class="has-children"><a href="blog-grid.html">Science & Technology</a>
+              <li class="has-children"><a href="blog-grid.html">Entertainment</a>
+              <li class="has-children"><a href="blog-grid.html">Articals</a>
+              <li class="has-children"><a href="blog-grid.html">Video</a>
+
+
+                {{-- <ul class="sub-menu">
                   <li><a href="page-about.html">About Us</a></li>
                   <li><a href="page-pricing.html">Pricing Plan</a></li>
                   <li><a href="page-contact.html">Contact Us</a></li>
@@ -38,18 +64,17 @@
                   <li><a href="page-signin.html">Signin</a></li>
                   <li><a href="page-reset-password.html">Reset Password</a></li>
                   <li><a href="blog-details.html">Blog Single</a></li>
-                </ul>
+                </ul> --}}
               </li>
-              <li class="has-children"><a href="blog-grid.html">Blog</a></li>
             </ul>
           </nav>
-          <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span
-              class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+          {{-- <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span
+              class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div> --}}
         </div>
         <div class="header-right">
           <div class="block-signin">
             <!-- <a class="text-link-bd-btom hover-up" href="page-register.html">Register</a> -->
-            <a class="btn btn-default btn-shadow ml-40 hover-up" href="page-signin.html">Sign in</a>
+            <a class="btn btn-default btn-shadow ml-40 hover-up" href="page-signin.html">Subscribe</a>
           </div>
         </div>
       </div>

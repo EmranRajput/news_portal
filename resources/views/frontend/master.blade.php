@@ -45,7 +45,7 @@
 
 
 {{-- ............. Start Footer ............... --}}
-    @include('frontend.body.header')
+    @include('frontend.body.footer')
 {{-- .............End footer ............... --}}
 
 
