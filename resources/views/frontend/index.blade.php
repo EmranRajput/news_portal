@@ -26,7 +26,7 @@
     {{-- .........Featured Section ............ --}}
    @include('frontend.home.feature_area', [ 'feature_news' => $feature_news])
     {{-- ..................sports Section.............................. --}}
-   @include('frontend.home.sport_area')
+   @include('frontend.home.sport_area',['trending_sports_news' => $trending_sports_news, 'sports_news'=>$sports_news ])
     {{-- ..................video Section.............................. --}}
    @include('frontend.home.video_area')
     {{-- ...............Blog section .................. --}}

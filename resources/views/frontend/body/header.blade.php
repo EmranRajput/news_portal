@@ -45,7 +45,7 @@
         <div class="header-nav">
           <nav class="nav-main-menu">
             <ul class="main-menu">
-              <li class="has-children"><a class="active" href="index.html">Home</a></li>
+              <li class="has-children"><a class="active" href="{{ route('home.news') }}">Home</a></li>
               <li class="has-children"><a href="jobs-list.html">International</a></li>
               <li class="has-children"><a href="companies-grid.html">Local</a></li>
               <li class="has-children"><a href="candidates-grid.html">Sport</a></li>

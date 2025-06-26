@@ -112,18 +112,6 @@
                 </div>
             @endforeach
             </div>
-
-
-              {{-- <div class="paginations">
-                <ul class="pager">
-                  <li><a class="pager-prev" href="#"><i class="fas fa-arrow-left"></i></a></li>
-                  <li><a class="pager-number" href="#">1</a></li>
-                  <li><a class="pager-number" href="#">2</a></li>
-                  <li><a class="pager-number active" href="#">3</a></li>
-                  <li><a class="pager-number" href="#">4</a></li>
-                  <li><a class="pager-next" href="#"><i class="fas fa-arrow-right"></i></a></li>
-                </ul>
-              </div> --}}
             </div>
 
 {{-- ,,,,,,,,,,,,,,,right side main section ,,,,,,,,,,,,,,,,,,,,,, --}}
@@ -142,16 +130,6 @@
 
 
 
-
-              {{-- <div class="widget_search mb-40">
-                <div class="search-form">
-                  <form action="#">
-                    <input type="text" placeholder="Search…">
-                    <button type="submit"><i class="fi-rr-search"></i></button>
-                  </form>
-                </div>
-              </div> --}}
-
 {{-- ...............trending section ................. --}}
               <div class="sidebar-shadow sidebar-news-small">
                 <h5 class="sidebar-title">Trending Now</h5>
@@ -162,15 +140,11 @@
                     <figure class="thumb mr-15"><img src="{{ asset('storage/' . $news->image) }}" alt="news_image"></figure>
                     <div class="content">
                     <a href="{{ route('view.news.detail', $news->slug) }}">
-                      <h5>{{ Str::limit(strip_tags($news->title), 30) }}</h5>
+                      <h5>{{ Str::limit(strip_tags($news->title), 70) }}</h5>
                     </a>
-                      <div class="post-meta text-muted d-flex align-items-center mb-15">
-                        <div class="author d-flex align-items-center mr-20"><span>Harding</span></div>
-                        <div class="date"><span>{{ $news->published_at }}</span></div>
-                      </div>
                     </div>
                   </div>
-@endforeach
+        @endforeach
                 </div>
               </div>
 
